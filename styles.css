@@ -257,3 +257,34 @@ footer.calm{background:#F1F4F7;color:var(--slate);padding:70px 0 0;font-size:15p
   .side-card{padding:36px 28px}
   .quote-band{padding:72px 22px}
 }
+
+/* ---------- homepage enrichment: highlights strip ---------- */
+.highlights{padding:64px 0 6px}
+.hl-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+@media(max-width:900px){.hl-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.hl-grid{grid-template-columns:1fr}}
+.hl{display:flex;gap:16px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:22px}
+.hl .ring{flex:none;width:50px;height:50px;border-radius:50%;background:var(--white);border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+.hl .ring i{font-size:22px;color:var(--gold-deep)}
+.hl b{display:block;font-family:var(--font-display);font-size:17.5px;color:var(--navy);margin-bottom:3px}
+.hl span{font-size:14px;color:var(--slate);line-height:1.5;display:block}
+
+/* Diversification: coverage grid + independent + claims (replaces long bands/highlights/strip) */
+.coverage-grid-sec{padding:90px 0 30px}
+.cov-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:820px){.cov-grid{grid-template-columns:1fr}}
+.cov-card{background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 14px 34px rgba(16,36,62,.07)}
+.cov-card img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.cov-bd{padding:26px}
+.cov-bd h3{font-size:22px;margin-bottom:8px}
+.cov-bd h3 i{color:var(--gold-deep);margin-right:8px}
+.cov-bd p{color:var(--slate);font-size:15.5px;margin-bottom:18px}
+.independent-sec{padding:20px 0 10px;background:var(--bg)}
+.claims-sec{padding:80px 0 90px}
+.claims-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1060px;margin:0 auto}
+@media(max-width:820px){.claims-grid{grid-template-columns:1fr}}
+.claim-step{background:var(--navy);color:#fff;border-radius:18px;padding:30px 26px}
+.claim-num{width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:700;font-size:20px;margin-bottom:16px}
+.claim-step h3{font-size:20px;margin-bottom:8px;color:#fff}
+.claim-step p{color:#B9C6D8;font-size:15px}
+.claim-step a{color:var(--gold);font-weight:600}
